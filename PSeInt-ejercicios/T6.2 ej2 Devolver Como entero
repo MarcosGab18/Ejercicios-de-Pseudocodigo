@@ -1,0 +1,22 @@
+Proceso sin_titulo
+	//Una funcion que reciba un numero en forma de cadena y lo devuelva como numero entero
+	Definir val,numeroentero,resta Como Entero;
+	Definir ncad Como Caracter;
+	leer ncad;
+	val=devuelto(ncad,numeroentero,resta);
+
+FinProceso
+Funcion valor1<-devuelto(ncad,numeroentero,resta)
+	Definir valor1 Como Entero;
+	Definir cadenaa Como Caracter;
+	cadenaa<-ncad;
+	numeroentero<-ConvertirANumero(cadenaa);
+	Si numeroentero<=999 Entonces
+		resta=numeroentero-1;
+		Escribir "El numero como entero es: ",resta;
+	SiNo
+		Escribir "ERROR";
+		Escribir "El numero supero los 3 digitos";
+		
+	FinSi
+FinFuncion

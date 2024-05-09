@@ -1,0 +1,17 @@
+Proceso sin_titulo
+	definir val,num,numer,suma,resto Como Real;
+	leer num;
+	numer<-num;
+	val=SUMDIG(num,numer,suma,resto);
+FinProceso
+Funcion valor1<-SUMDIG(num,numer,suma,resto)
+	Definir valor1 Como Real;
+	suma=0;
+	Mientras num<>0 Hacer
+		resto=num mod 10;
+		suma=suma+resto;
+		num=trunc(num/10);
+	FinMientras
+	Escribir "La suma de los digitos de ",numer," es ",suma;
+FinFuncion
+	

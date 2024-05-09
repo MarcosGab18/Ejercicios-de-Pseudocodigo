@@ -1,0 +1,20 @@
+Algoritmo sin_titulo
+	//Un vector que contenga 100notas de 100 supuesto estudiante
+	//valores entre 0 y 20
+	//Los mismos se tienen que generar aleatoriamente
+	Dimension vect1[5]
+	Dimension vect2[5]
+	Para i<-1 Hasta 5 Hacer
+		vect1[i]<-Aleatorio(1,100);
+		vect2[i]<-Aleatorio(1,100);
+	FinPara
+	Escribir "PARA EL VECTOR 1";
+	Para i<-1 Hasta 5 Hacer
+		Escribir"El valor n°",i," es ",vect1[i]
+	FinPara
+	Escribir "PARA EL VECTOR 2";
+	Para i<-1 Hasta 5 Hacer
+		Escribir"El valor n°",i," es ",vect2[i];
+	FinPara
+	
+FinAlgoritmo

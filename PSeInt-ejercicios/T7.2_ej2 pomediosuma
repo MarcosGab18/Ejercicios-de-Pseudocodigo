@@ -1,0 +1,16 @@
+Algoritmo sin_titulo
+	Definir n,i,vect1 Como Entero
+	Escribir "Ingrse el tam del vector";
+	Leer n
+	Dimension vect1[n];
+	Para i<-0 Hasta n-1 Con Paso 1 Hacer
+		Escribir "Ingrese el valor ",i;
+		Leer vect1[i];
+		suma<-suma+vect1[i]
+		cont<-cont+1
+	Fin Para
+	promedio<-suma/cont
+	Escribir "El promedio de la Suma es: ",promedio;
+
+	
+FinAlgoritmo

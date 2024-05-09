@@ -1,0 +1,61 @@
+Algoritmo Ejercicio5dearreglos
+	Definir N, i Como Entero;
+	Definir vectorA, vectorB, vectorC, opcion Como Entero;
+	definir opcion2 Como Caracter;
+	
+	Escribir "Ingresa el tamaño de los vectores: ";
+	Leer N;
+	Dimension vectorA(N);
+	Dimension vectorB(N);
+	Dimension vectorC(N);
+	Escribir "1. Llenar Vector A";
+	Escribir "2. Llenar Vector B";
+	Escribir "3. Llenar Vector C con la suma de A y B";
+	Escribir "4. Llenar Vector C con la resta de B y A";
+	Escribir "5. Mostrar vector";
+	Escribir "6. Salir";
+	Escribir "Elige una opción: ";
+	Repetir
+		Leer opcion;
+		
+		Segun opcion Hacer
+			caso 1:
+				Para i <- 1 Hasta N Hacer
+					vectorA[i] <- Aleatorio(-100, 100);
+				FinPara
+			caso 2:
+				Para i <- 1 Hasta N Hacer
+					vectorB[i] <- Aleatorio(-100, 100);
+				FinPara
+			caso 3:
+				Para i <- 1 Hasta N Hacer
+					vectorC[i] <- vectorA[i] + vectorB[i];
+				FinPara
+			caso 4:
+				Para i <- 1 Hasta N Hacer
+					vectorC[i] <- vectorB[i] - vectorA[i];
+				FinPara
+			caso 5:
+				Escribir "A. Mostrar Vector A";
+				Escribir "B. Mostrar Vector B";
+				Escribir "C. Mostrar Vector C";
+				Escribir "Elige una opción: ";
+				Leer opcion2;
+				
+				Segun opcion2 Hacer
+					"A":
+						Para i <- 1 Hasta N Hacer
+							Escribir vectorA[i];
+						FinPara
+					"B":
+						Para i <- 1 Hasta N Hacer
+							Escribir vectorB[i];
+						FinPara
+					"C":
+						Para i <- 1 Hasta N Hacer
+							Escribir vectorC[i];
+						FinPara
+				FinSegun
+		FinSegun
+	Hasta Que  opcion = 6
+FinAlgoritmo

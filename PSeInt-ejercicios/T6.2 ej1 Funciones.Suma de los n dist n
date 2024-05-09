@@ -1,0 +1,24 @@
+Proceso T62_ej1
+	Definir n,divisor,sumdiv,val,residuo Como Real;
+	leer n;
+	val=Div(n,residuo,sumdiv,divisor);
+FinProceso
+Funcion valor1<-Div(n,residuo,sumdiv,divisor)
+	Definir valor1,i Como Real;
+	para i<-1 Hasta n-1 Hacer
+		residuo<- n mod (n-i);
+		Si residuo=0 Entonces
+			divisor<-(n-i);
+			sumdiv<-sumdiv+divisor;
+			Escribir "EL ",divisor," ES DIVISOR";
+		SiNo
+			divisor<-(n-i);
+			Escribir "EL ",divisor," NO ES DIVISOR";
+		FinSi
+		
+	FinPara
+	Escribir"LA SUMA ES:",sumdiv;
+	
+FinFuncion
+
+	

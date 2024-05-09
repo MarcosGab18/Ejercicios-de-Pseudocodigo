@@ -1,0 +1,12 @@
+Proceso sin_titulo
+	Definir n,i,centronumerico Como Real;
+	Escribir "ingrese el numero";
+	leer n;
+	Para i<-1 Hasta n Hacer
+		centronumerico=(i*(i+1))/2;
+		Si centronumerico<=n Entonces
+			Escribir "Centro numerico encontrado: ",centronumerico;
+		FinSi
+	FinPara
+	
+FinProceso

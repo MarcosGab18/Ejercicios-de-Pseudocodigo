@@ -1,0 +1,25 @@
+Proceso sin_tituloqef
+	Definir val,user,pasw,usuario1,asdasd Como Caracter;
+	val<-login(user,pasw,usuario1,asdasd);
+FinProceso
+Funcion valor1<-login(user,pasw,usuario1,asdasd)
+	Definir valor1 Como Caracter;
+	Definir cont Como Entero;
+	cont=0;
+	Definir vof Como Logico;
+	Repetir
+		cont=cont+1;
+		Escribir "ingrese el usuario";
+		LEER user;
+		Escribir "contrasena";
+		Leer pasw;
+		Si cont<3 o user<>"usuario1" o pasw<>"asdasd" Entonces
+			vof=Verdadero;
+		SiNo
+			vof=falso;
+		FinSi
+	Hasta Que user="usuario1" y pasw="asdasd" o cont=3
+
+	
+FinFuncion
+

@@ -1,0 +1,11 @@
+Proceso sin_titulo
+	Definir num1,num2 Como Entero;
+	Escribir "INGRESE 2 NUMEROS";
+	Leer num1,num2;
+	Escribir suma(num1,num2);
+FinProceso
+Funcion valor1<-suma(num1,num2)
+	DEFINIR valor1 Como Entero;
+	valor1=num1+num2;
+	
+FinFuncion

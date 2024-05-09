@@ -1,0 +1,31 @@
+Proceso sin_titulo_
+	// Calcule losi primeros 4 centros numericoslee
+	// tiene que ser una lista de numero para consiga un centro numerico 
+	//
+	Definir i,j,n,suma1,suma2,centronumerico Como Entero;
+	Escribir "ingrese";
+	leer n;
+	
+	
+	i=1;
+	Para i=1 Hasta n Hacer
+		suma1=0;
+		suma2=0;
+		Para j<-1 Hasta i-1 Hacer
+			suma1=suma1+j;
+		FinPara
+		Para j<-i+1 Hasta n Hacer
+			suma2=suma2+j;
+		FinPara
+		
+	FinPara
+	Si suma1<=suma2 Entonces
+		centronumerico=i;
+		Escribir "Es centro numerico es: ",centronumerico;
+	FinSi
+	
+	
+	
+FinProceso
+
+	

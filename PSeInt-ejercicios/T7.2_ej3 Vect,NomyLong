@@ -1,0 +1,20 @@
+Algoritmo sin_titulo
+	Definir n,i como entero;
+	Definir nomb Como Caracter;
+	Escribir "Ingresar t";
+	leer n;
+	aux=n;
+	Dimension vect1[n]
+	Dimension vect2[n]
+
+	Para i<-1 Hasta n Hacer
+		Escribir"INGRESE NOMBRE N°",i;
+		Leer nomb
+		vect1[i]<-nomb
+		vect2[i]<-longitud(nomb)
+		Escribir "Para Persona ",i;
+		Escribir"El nombre es: ",vect1[i];
+		Escribir"La longitud es: ",vect2[i];
+	Fin Para
+	
+FinAlgoritmo

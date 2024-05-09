@@ -1,0 +1,27 @@
+Proceso Lecturas_de_letras_
+	definir dant,dias,mes,anio Como Real;
+	DANTERIOR(dant,dias,mes,anio);
+FinProceso
+SubProceso DANTERIOR(dant,dia,mes,anio )
+	Escribir "INGRESE DIA, MES , ANIO";
+	Leer dia,mes,anio;	
+	Si dia<30 Entonces
+		dant=dia-1;
+		Escribir dant;
+		Si mes<=12 Entonces
+			Escribir mes;
+			Si anio>0 Entonces
+				Escribir anio;
+			SiNo
+				Escribir "error3";
+			FinSi
+		SiNo
+			Escribir "error2";
+		FinSi
+		
+	SiNo
+		Escribir "error1";	
+	FinSi
+FinSubProceso
+
+
